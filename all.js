@@ -502,13 +502,13 @@ function showRoomAmenities (amenities, roomFacility, bookingFormFacility) {
     if (amenities[element]) {
       const ok = `
             <div>
-                <img src="/切版練習/旅館訂房/img/${element}.svg" alt="">
-                <img src="/切版練習/旅館訂房/img/ok.svg" alt="" class="room__indroduce__facility__status">
+                <img src="img/${element}.svg" alt="">
+                <img src="img/ok.svg" alt="" class="room__indroduce__facility__status">
                 <span>${obj[element]}</span>
             </div>`
       const have = `
                     <div>
-                        <img src="/切版練習/旅館訂房/img/${element}.svg" alt="">
+                        <img src="img/${element}.svg" alt="">
                         <span>${obj[element]}</span>
                     </div>`
       arr.push(ok)
@@ -516,8 +516,8 @@ function showRoomAmenities (amenities, roomFacility, bookingFormFacility) {
     } else {
       const not = `
             <div class="not">
-                <img src="/切版練習/旅館訂房/img/${element}.svg" alt="">
-                <img src="/切版練習/旅館訂房/img/not.svg" alt="" class="room__indroduce__facility__status">
+                <img src="img/${element}.svg" alt="">
+                <img src="img/not.svg" alt="" class="room__indroduce__facility__status">
                 <span>${obj[element]}</span>
             </div>`
       arr.push(not)
