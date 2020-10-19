@@ -1,0 +1,330 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(88, 112, 17);
+}
+
+.mask{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.room{
+    display: flex;
+    justify-content: space-between; 
+    .room__booking{
+        position: fixed;
+        margin-right: 30px;
+        height: 100%;
+        width: 37%;
+        label{
+            cursor: pointer;
+            position: absolute;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            right: 305px;
+            bottom: 50px;
+        }
+        & label:nth-child(8){
+            right: 275px;
+        }
+        & label:nth-child(9){
+            right: 245px;
+        }
+        .first, .second, .third{
+            width: 100%;
+            height: 100%;
+            background-position: center,center,center,center;
+            background-size: cover;
+        }
+        .room__booking--active{
+            cursor: pointer;
+            position: absolute;
+            left: 27%;
+            bottom: 15%;
+            background-color: rgb(88, 112, 17);
+            color: white;
+            border: none;
+            font-size: 20px;
+            line-height: 44px;
+            width: 252px;
+        }
+        .room__booking--return{
+            font-size: 14px;
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            background-color: rgb(88, 112, 17);
+            color: white;
+            text-align: center;
+            width: 110px;
+            padding: 5px;
+            text-decoration: none;
+            &::before{
+                position: absolute;
+                content: '';
+                top: -3px;
+                left: -25px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 26px 15px 0;
+                border-color: transparent rgb(88, 112, 17) transparent transparent;
+            }
+        }
+        .room__booking__price{
+            font-size: 20px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 23%;
+            >span{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 36px;
+            }
+        }
+    }
+    .room__introduce{
+        margin-left: 40%;
+        margin-right: 70px;
+        h2{
+            width: 55%;
+            display: inline-block;
+            font-size: 40px;
+            margin-top: 107px;
+            margin-bottom: 38px;
+            font-weight: 500;
+        }
+        span{
+            font-weight: 500;
+        }
+        .room__introduce__text, .room__introduce__time{
+            margin-bottom: 35px;
+            li{
+                line-height: 24px;
+            }
+        }
+        .room__introduce__text{
+            font-weight: 300;
+        }
+        .room__introduce__facility{
+            .not{
+                opacity: .2;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            span{
+                display: block;
+                text-indent: -20px;
+            }
+            >div{
+                width: 13%;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            .room__indroduce__facility__status{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+.booking__form{
+    position: fixed;
+    background-color: white;
+    border: solid 1px #38470B;
+    width: 1100px;
+    height: 600px;
+    margin: 68px 128px;
+    display: flex;
+    font-size: 14px;
+    z-index: 1;
+    top: 5%;
+    left: 10%;
+    .booking__form__client{
+        width: 445px;
+        padding: 50px 65px 26px;
+        background-color: #38470B;
+        color: white;
+        input{
+            margin-top: 7px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 38px;
+            color: #38470B;
+            text-indent: 20px;
+        }
+        .booking__form__client__data{
+            margin-bottom: 16px;
+            >span{
+                color: red;
+            }
+            >p{
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+        >p{
+            color: #949C7C;
+        }
+        .booking__form__client__bill{
+            padding-top: 8px;
+            margin: 16px 0 20px;
+            border-top: 1px solid #949C7C;
+            text-align: right;
+            span{
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+        .booking__form__client--send{
+            cursor: pointer;
+            border: 2px solid white;
+            width: 100%;
+            font-size: 18px;
+            line-height: 44px;
+            text-align: center;
+            background-color: #38470B;
+            color: white;
+            margin-bottom: 18px;
+        }
+        >span{
+            display: block;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .booking__form__roomInfo{
+        overflow: auto;
+        width: 665px;
+        >img{
+            position: absolute;
+            top: 39px;
+            right: 39px;
+            cursor: pointer;
+
+        }
+        h2{
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        li{
+            line-height: 26px;
+            font-size: 12px;
+        }
+        padding: 51px 94px 26px 30px;
+        h3{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        >div{
+            padding: 20px 0;
+            border-top: 1px solid #38470B;
+            margin-bottom: 26px;
+            >p{
+                line-height: 25px;
+            }
+        }
+        .booking__form__roomInfo__facility{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: center;
+            div{
+                margin-right: 35px;
+                margin-bottom: 20px;
+                width: 12%;
+            }
+            img{
+                display: block;
+                height: 30px;
+                width: 30px;
+                margin: 0 auto 8px ;
+            }
+            span{
+                display: block;
+            }
+        }
+
+    }
+    .booking__form__roomInfo__process{
+        display: flex;
+        >img{
+            margin: 0 15px;
+        }
+        >div{
+            height: 136px;
+            width: 160px;
+            border: 1px solid #949C7C;
+            text-align: center;
+            border-radius: 10px;
+            p{
+                padding: 5px;
+            }
+            >div{
+                width: 160px;
+                height: 50px;
+                margin-top: -1px;
+                margin-left: -1px;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #949C7C;
+                text-align: center;
+            }
+        }
+    }
+}
+.innerFirst, .innerSecond, .innerThird{
+    left: 35%;
+    position: fixed;
+    z-index: 1;
+    height: 90%;
+    width: 30%;
+    margin-top: 40px;
+    background-position: center,center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.closePhoto{
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    right: 26%;
+    top: 25px;
+    width: 20px;
+}
+.prevImg, .nextImg{
+    width: 0;
+    height: 0;
+    background: none;
+    border-style: solid;
+    cursor: pointer;
+    position: fixed;
+    outline: none;  
+    z-index: 1;
+}
+.prevImg{
+    top: 45%;
+    left: 25%;
+    border-width: 20px 25px 20px 0;
+    border-color: transparent rgb(102, 129, 21) transparent transparent;
+}
+.nextImg{
+    top: 45%;
+    right: 25%;
+    border-width: 20px 0 20px 25px;
+    border-color: transparent transparent transparent rgb(102, 129, 21);
+}
+.disappear{
+    display: none;
+}
+
