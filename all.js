@@ -43,7 +43,7 @@ let RoomImgNumber = 1
 let innerRoomImgNumber = 1
 
 if (window.location.href === 'https://jazztyy.github.io/BookingWeb/') {
-  console.log();
+  console.log(window.location.href);
   initIndex(houseAPI)
   changeIndexImg()
   imgPoint.addEventListener('click', changeBackgroundImg)
