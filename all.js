@@ -48,6 +48,7 @@ if (window.location.href === 'https://jazztyy.github.io/BookingWeb/') {
   changeIndexImg()
   imgPoint.addEventListener('click', changeBackgroundImg)
 } else {
+  console.log(window.location.href);
   const roomID = window.location.href.split('?')[1]
   getRoomData(roomAPI + roomID)
   roomImg.addEventListener('click', showInnerRoomPhoto)
