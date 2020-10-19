@@ -42,7 +42,7 @@ let ImgNumber = 1
 let RoomImgNumber = 1
 let innerRoomImgNumber = 1
 
-if (window.location.href === 'http://127.0.0.1:5500/%E5%88%87%E7%89%88%E7%B7%B4%E7%BF%92/%E6%97%85%E9%A4%A8%E8%A8%82%E6%88%BF/index.html') {
+if (window.location.href.split('/').splice(-1)[0] === 'index.html') {
   initIndex(houseAPI)
   changeIndexImg()
   imgPoint.addEventListener('click', changeBackgroundImg)
