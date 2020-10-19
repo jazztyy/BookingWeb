@@ -42,28 +42,25 @@ let ImgNumber = 1
 let RoomImgNumber = 1
 let innerRoomImgNumber = 1
 
-if (window.location.href === 'https://jazztyy.github.io/BookingWeb/') {
   console.log(window.location.href);
   initIndex(houseAPI)
   changeIndexImg()
   imgPoint.addEventListener('click', changeBackgroundImg)
-} else {
-  console.log(window.location.href);
-  const roomID = window.location.href.split('?')[1]
-  getRoomData(roomAPI + roomID)
-  roomImg.addEventListener('click', showInnerRoomPhoto)
-  roomPhoto.addEventListener('click', showRoomPhoto)
-  sendBookingData.addEventListener('click', sendBookingInfo)
-  closeForm.addEventListener('click', judgeBookingRoomForm)
-  bookingNow.addEventListener('click', judgeBookingRoomForm)
-  closePhoto.addEventListener('click', judgeBookingRoomForm)
-  checkInAndOutDate.addEventListener('click', judgeBookingRoomCalendar)
-  MonthList.addEventListener('click', judgeCalendarEvent)
-  singleMonth.addEventListener('click', judgeCalendarEvent)
-  changeRoomImg()
-  initCalendar()
-  initToday()
-}
+  // console.log(window.location.href);
+  // const roomID = window.location.href.split('?')[1]
+  // getRoomData(roomAPI + roomID)
+  // roomImg.addEventListener('click', showInnerRoomPhoto)
+  // roomPhoto.addEventListener('click', showRoomPhoto)
+  // sendBookingData.addEventListener('click', sendBookingInfo)
+  // closeForm.addEventListener('click', judgeBookingRoomForm)
+  // bookingNow.addEventListener('click', judgeBookingRoomForm)
+  // closePhoto.addEventListener('click', judgeBookingRoomForm)
+  // checkInAndOutDate.addEventListener('click', judgeBookingRoomCalendar)
+  // MonthList.addEventListener('click', judgeCalendarEvent)
+  // singleMonth.addEventListener('click', judgeCalendarEvent)
+  // changeRoomImg()
+  // initCalendar()
+  // initToday()
 
 // 初始化
 
