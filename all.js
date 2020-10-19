@@ -277,7 +277,7 @@ function sendBookingInfo () {
 // 顯示畫面
 
 function showIndexRoomList (Imgurl, roomName, Id) {
-  return `<a href="http://127.0.0.1:5500/%E5%88%87%E7%89%88%E7%B7%B4%E7%BF%92/%E6%97%85%E9%A4%A8%E8%A8%82%E6%88%BF/room.html?${Id}" class="room" style="background-image: url(${Imgurl});" data-text="${roomName}"></a>`
+  return `<a href="https://jazztyy.github.io/BookingWeb/room.html?${Id}" class="room" style="background-image: url(${Imgurl});" data-text="${roomName}"></a>`
 }
 
 function showRoomImg (img) {
